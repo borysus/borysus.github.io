@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wściekły Klawisz - Strona Główna</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <nav class="navbar"> <!-- Pasek Nawigacyjny -->
+            <div align="center">
+                    <a href="posts.html">Lista polecanych klawiatur</a>  <a href="sound-tests.html">Testy dźwięku</a>  <a href="image-posts.html">Zdjęcia</a>
+            </div>
+        </nav>
+        <hr>
+            <p class="site-title">Stwórz swoją własną klawiaturę!</p>
+            <div class="chechboxes" align="center">
+                <form action="plik.php">
+                    <p class="big-desc-type">Baza (kolor i rozmiar ma wpływ na cenę, a kolor nie wpływa na klawisze tylko na ramę):</p>
+                    <p class="onlyfont">
+                        60%
+                        <input id="60" name="rozmiar" type="radio" name="1" value="60">
+                    </p> 
+                    <p class="onlyfont">
+                        80%
+                        <input id="80" name="rozmiar" type="radio" name="1" value="80">
+                    </p>
+                    <p class="big-desc-type">Kolor:</p>
+                    <p class="onlyfont">
+                        Czarny
+                        <input id="black" name="kolor" type="radio" name="2" value="black">
+                    </p>
+                    <p class="onlyfont">
+                        Biały
+                        <input id="white" name="kolor" type="radio" name="2" value="white">
+                    </p>
+                    <p class="big-desc-type">Keycapy:</p>
+                    <p class="onlyfont">
+                        Domyślne (brak dodatkowych kosztów, ale gorszy wygląd)
+                        <input id="Basic" name="keycapy" type="radio" name="3" value="Basic">
+                    </p>
+                    <p class="onlyfont">
+                        Inne (kontakt)
+                        <input id="Other" name="keycapy" type="radio" name="3" value="Other">
+                    </p>
+                    <p class="big-desc-type">
+                        Przesmarowanie Switchy (dodatkowo płatne):
+                    </p>
+                    <p class="onlyfont">
+                        Tak
+                        <input id="yeah" name="smar" type="radio" name="4" value="yeah">
+                    </p>
+                    <p class="onlyfont">
+                        Nie
+                        <input id="nah" name="smar" type="radio" name="4" value="nah">
+                    </p>
+                    <p class="big-desc-type">Switche:</p>
+                    <p class="onlyfont">
+                        <a href="sound-tests.html#hpsttarget">Holy Panda V2</a>
+                        <input id="HolyPandaV2" name="switche" type="radio" value="HolyPandaV2">
+                    </p>
+                    <p class="desc-type">LEOBOG:</p>
+                    <p class="onlyfont">
+                        Reaper
+                        <input id="LeobogReaperLinear" type="radio" name="switche" value="LeobogReaperLinear">
+                    </p>
+                    <p class="onlyfont">
+                        Nimbus V3
+                        <input id="LeobogNimbusV3" type="radio" name="switche" value="LeobogNimbusV3">
+                    </p>
+                    <p class="onlyfont">
+                        Icesoul
+                        <input id="LeobogIceSoul" type="radio" name="switche" value="LeobogIceSoul">
+                    </p>
+                    <p class="onlyfont">
+                        Ink Crystal V3
+                        <input id="LeobogInkCrystalV3" type="radio" name="switche" value="LeobogInkCrystalV3">
+                    </p>
+                    <p class="onlyfont">
+                        Kayking V2
+                        <input id="LeobogKaykingV2" type="radio" name="switche" value="LeobogKaykingV2">
+                    </p>
+                    <p class="onlyfont">
+                        Purple King
+                        <input id="LeobogPurpleKing" type="radio" name="switche" value="LeobogPurpleKing">
+                    </p>
+                    <p class="onlyfont">
+                        Wolfberry
+                        <input id="LeobogWolfberry" type="radio" name="switche" value="LeobogWolfberry">
+                    </p>
+                    <p class="onlyfont">
+                        Rocklee
+                        <input id="LeobogRocklee" type="radio" name="switche" value="LeobogRocklee">
+                    </p>
+                    <p class="onlyfont">
+                        Chive
+                        <input id="LeobogChive" type="radio" name="switche" value="LeobogChive">
+                    </p>
+                    <p class="onlyfont">
+                        Standard Brown
+                        <input id="LeobogBrown" type="radio" name="switche" value="LeobogBrown">
+                    </p>
+                    <p class="small-desc-type">Graywood:</p>
+                    <p class="onlyfont">
+                        V3
+                        <input id="LeobogGraywoodV3" type="radio" name="switche" value="LeobogGraywoodV3">
+                    </p>
+                    <p class="onlyfont">
+                        V4
+                        <input id="LeobogGraywoodV4" type="radio" name="switche" value="LeobogGraywoodV4">
+                    </p>
+                    <p class="desc-type">Outemu:</p>
+                    <p class="onlyfont">
+                        <a href="sound-tests.html#orbisttarget">Podstawowe Outemu Red (okropne są ale nic cię nie kosztują, jeśli decydujesz się na nie, bardzo polecam przesmarowanie)</a>
+                        <input id="BasicRed" name="switche" type="radio" value="BasicRed">
+                    </p>
+                    <p class="onlyfont">
+                        Red (lepsze od podstawowych)
+                        <input id="OutemuRed" name="switche" type="radio" value="OutemuRed">
+                    </p>
+                    <p class="onlyfont">
+                        Brown
+                        <input id="OutemuBrown" name="switche" type="radio" value="OutemuBrown"> 
+                    </p>
+                    <p class="onlyfont">
+                        <a href="sound-tests.html#obsttarget">Blue</a>
+                        <input id="OutemuBlue" name="switche" type="radio" value="OutemuBlue">
+                    </p>
+                    <p>
+                        <input type="submit" value="Wyślij">
+                    </p>
+                </form>
+            </div>
+        <hr>
+        <footer class="footer">
+            <h2>Kontakt</h2>
+            <div>
+                <p>Zamówienia zgłaszać tutaj.</p>
+                <p>Numer (+48 Polska): 882196507</p>
+                <p>Mail: borysgalach@outlook.com</p>
+                <p>Strona ta, jak i działalność z nią związana, jest kierowana przez osobę niepełnoletnią. Więcej informacji znajdziesz <a href="info-dzialalnosc.html">tutaj</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>
