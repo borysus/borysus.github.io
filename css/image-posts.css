@@ -34,8 +34,10 @@ body{
 a {
     text-align: center;
     color: var(--main-text-color);
+    transition: var(--transition-speed);
 }
 
 a:hover{
     color: var(--mid-color);
+    transition: var(--transition-speed);
 }

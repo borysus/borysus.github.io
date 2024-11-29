@@ -13,10 +13,12 @@ body{
 a {
     color: var(--main-text-color);
     text-align: center;
+    transition: var(--transition-speed);
 }
 
 a:hover{
     color: var(--mid-color);
+    transition: var(--transition-speed);
 }
 
 .guzik{
@@ -29,10 +31,12 @@ a:hover{
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: var(--transition-speed);
 }
 
 .guzik:hover{
     background-color: var(--darker-mid-color);
+    transition: var(--transition-speed);
 }
 
 .site-title{
