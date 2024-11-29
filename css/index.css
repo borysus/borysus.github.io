@@ -32,7 +32,7 @@ a:hover{
 }
 
 .guzik:hover{
-    background-color: var(--kolor-tla);
+    background-color: var(--darker-mid-color);
 }
 
 .site-title{
@@ -58,14 +58,19 @@ a:hover{
 
 .zdjecie{
     background: var(--mid-color);
-    border-radius: 45px;
-    width: 373px;
-    height: 373px;
-    padding: 10px;
+    border-radius: 35px;
+    width: 20%;
+    height: 20%;
+    padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pfp{
+    width: 10%;
+    height: 10%;
 }
 
 .bigga-btw{
