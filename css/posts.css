@@ -36,19 +36,18 @@ a:hover{
     text-align: center;
 }
 
-.nazwaklawy {
+.post-title{
     font-family: "Lucida Console", "Courier New", monospace;
-    text-align:center;
-    font-size: 24px;
-    margin-bottom: 10px;
     text-align: center;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .post-title-description {
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
-    font-size: 16px;
+    font-size: 2vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -56,7 +55,7 @@ a:hover{
 .post-description {
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
-    font-size: 13px;
+    font-size: 1.5vw;
     margin-left: auto;
     margin-right: auto;
 }
