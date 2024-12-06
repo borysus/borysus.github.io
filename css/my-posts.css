@@ -1,0 +1,71 @@
+@import url(zmnienne-global.css);
+
+body{
+    background-color: var(--kolor-tla);
+    color: var(--main-text-color);
+    font-family:  var(--my-font);
+}
+
+a {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: var(--main-text-color);
+    transition: var(--transition-speed);
+}
+
+a:hover{
+    color: var(--mid-color);
+    transition: var(--transition-speed);
+}
+
+.site-title{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.post {
+    background: var(--mid-color);
+    border-radius: 15vw;
+    width: 80vw;
+    padding: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.post-title{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title-description {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-description {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: var(--main-text-color);
+}

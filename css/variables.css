@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #33f;
+    --primary-background: #eee;
+    --secondary-background: #ddd;
+}
+
+.post {
+    --primary-background: #fff;
+}
+
+.comment {
+    --primary-background: #aaa;
+}
