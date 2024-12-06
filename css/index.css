@@ -1,20 +1,27 @@
 :root{
-    --kolor-tla: black;
-    --main-text-color: white;
-    --mid-color: #868686;
-    --darker-mid-color: #6e6d6d;
     --my-font: "Lucida Console", "Courier New", monospace;
     --transition-speed: 0.5s;
     --transition-delay: 0s;
+
+    --mid-color: #868686;
+    --darker-mid-color: #6e6d6d;
 }
 
 body{
-    background-color: var(--kolor-tla);
-    color: var(--main-text-color);
-    font-family:  var(--my-font);
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.footer{
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+footer{
     text-align: center;
 }
 
@@ -27,6 +34,9 @@ a {
 a:hover{
     color: var(--mid-color);
     transition: var(--transition-speed);
+    transition-delay: var(--transition-delay);
+    font-weight: 400;
+    transition: 0.5s ease-out;
 }
 
 .guzik{
@@ -133,5 +143,10 @@ a:hover{
     font-size: 1.5vw;
     margin-left: auto;
     margin-right: auto;
+}
+video{
+    background: var(--mid-color);
+    border-radius: 35px;
+    padding: 5px;
 }
 
