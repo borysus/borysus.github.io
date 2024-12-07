@@ -6,8 +6,9 @@
         <title>Wściekły Klawisz - Strona Główna</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/file1.js"></script>
     </head>
-    <body>
+    <body onload="changeTheme()">
         <nav class="navbar"> <!-- Pasek Nawigacyjny -->
             <div align="center">
                 <a href="index.html">Strona Główna</a> <a href="make-ur-own.html">Stwórz własną klawiaturę</a> <a href="posts.html">Lista polecanych klawiatur</a>  <a href="sound-tests.html">Testy dźwięku</a>  <a href="image-posts.html">Zdjęcia</a>
@@ -21,6 +22,12 @@
         <p class="onlyfont" align="center">Zbieram na RX'a 7600 lub 6650XT oraz Ryzena 5 5600X lub 5600.</p>
         <p class="onlyfont" align="center">Kiedyś również programowałem gry, co prawda wielki low effort ale zawsze coś! Możesz je znaleść na <a href="https://borysus.itch.io/">borysus.itch.io</a>.</p>
         <p class="btw" align="center">btw używam archa</p>
+        <hr>
+        <div align="center">
+            <button class="changeThemeButton" onclick="changeTheme()">
+                Zmień motyw
+            </button>
+        </div>
         <hr>
         <footer class="footer">
             <h2>Kontakt</h2>

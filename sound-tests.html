@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wściekły Klawisz - Dźwięki</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/file1.js"></script>
 </head>
-<body>
+<body onload="changeTheme()">
     <nav class="navbar">
         <div align="center" style="padding: 0,8;">
                 <a href="index.html">Strona Główna</a> <a href="make-ur-own.html">Stwórz własną klawiaturę</a>  <a href="posts.html">Lista polecanych klawiatur</a>  <a href="image-posts.html">Zdjęcia</a>
@@ -36,6 +37,12 @@
             <source src="OnlyKlawiatury/OutemuRedSoundTest.mp4" type="video/mp4">
             Twoja przeglądarka nie pozwala na odtwarzanie filmów. 
         </video>
+    </div>
+    <hr>
+    <div align="center">
+        <button class="changeThemeButton" onclick="changeTheme()">
+            Zmień motyw
+        </button>
     </div>
     <hr>
     <footer class="footer">

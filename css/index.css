@@ -7,16 +7,16 @@
     --darker-mid-color: #6e6d6d;
 }
 
-body{
+body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
-
-.dark-mode{
+  
+.dark {
     background-color: black;
     color: white;
 }
 
-.light-mode{
+.light{
     background-color: white;
     color: black;
 }

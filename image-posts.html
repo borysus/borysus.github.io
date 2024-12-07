@@ -6,8 +6,9 @@
         <title>Wściekły Klawisz - Galeria</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/file1.js"></script>
     </head>
-    <body>
+    <body onload="changeTheme()">
         <nav class="navbar"> <!-- Pasek Nawigacyjny -->
             <div class="container" align="center">
                 <a href="index.html">Strona Główna</a>  <a href="make-ur-own.html">Stwórz własną klawiaturę</a> <a href="posts.html">Lista polecanych klawiatur</a>  <a href="sound-tests.html">Testy dźwięku</a>
@@ -28,6 +29,12 @@
             <img class="zdjecie" src="OnlyKlawiatury/13.jpg">
             <img class="zdjecie" src="OnlyKlawiatury/14.jpg">
             <img class="zdjecie" src="OnlyKlawiatury/15.jpg">
+        </div>
+        <hr>
+        <div align="center">
+            <button class="changeThemeButton" onclick="changeTheme()">
+                Zmień motyw
+            </button>
         </div>
         <hr>
         <footer class="footer">

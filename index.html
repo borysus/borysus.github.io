@@ -6,19 +6,9 @@
         <title>Wściekły Klawisz - Strona Główna</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
-        
+        <script src="js/file1.js"></script>
     </head>
-    <script>
-    function changemode(){
-        var x = document.body;
-        if (x.classList === "dark-mode") {
-        x.classList.toggle = "dark-mode";
-        } else {
-        x.classList.toggle = "light-mode";
-  }
-    }
-    </script>
-    <body>
+    <body onload="changeTheme()">
         <div>
             <p align="center" class="site-title">Strona Główna</p>
             <p align="center" class="onlyfont"><a href="make-ur-own.html">Stwórz własną klawiaturę</a></p>
@@ -29,7 +19,9 @@
         </div>
         <hr>
         <div align="center">
-            <button onclick="changemode()">Zmień motyw</button>
+            <button class="changeThemeButton" onclick="changeTheme()">
+                Zmień motyw
+            </button>
         </div>
         <hr>
         <footer class="footer">
