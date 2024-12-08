@@ -5,18 +5,17 @@ function changeThemeOnStart() {
 
 function changeTheme(){
 
-    var root = document.querySelector(':root');
+    let root = document.querySelector(':root');
 
     if ( document.body.classList.contains('dark') ){
         document.body.classList.toggle('light');
-        document.root.style.setProperty('--mid-color: #797979'); //LIGHT MID COLOR
-        document.root.style.setProperty('--darker-mid-color: #919292'); //LIGHT DARKER MID COLOR
+        // root.style.setProperty('--mid-color', '#797979'); //LIGHT MID COLOR
+        // root.style.setProperty('--darker-mid-color', '#919292'); //LIGHT DARKER MID COLOR
     }
     else if (document.body.classList.contains('light'))
     {
-        //dark mode changes
         document.body.classList.toggle('dark');
-        document.root.style.setProperty('--mid-color: #868686'); //DARK MID COLOR
-        document.root.style.setProperty('--darker-mid-color: 6e6d6d'); //DARK DARKER MID COLOR
+        // root.style.setProperty('--mid-color', '#868686'); //DARK MID COLOR
+        // root.style.setProperty('--darker-mid-color', '6e6d6d'); //DARK DARKER MID COLOR
     }
 }
