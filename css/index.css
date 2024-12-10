@@ -10,7 +10,7 @@
     --darker-mid-color-dark: #919292;
 }
 
-body {
+body:not(a){
     font-family: "Lucida Console", "Courier New", monospace;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255) 100%);
@@ -20,13 +20,13 @@ body {
     background-size: 100%;
 }
   
-.dark {
+.dark:not(a) {
     color: white;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255) 100%);
 }
 
-.light{
+.light:not(a){
     color: black;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgb(100, 0, 255) 100%);
@@ -37,9 +37,17 @@ footer{
 }
 
 a {
-    color: var(--main-text-color);
+    color: white;
     text-align: center;
     transition: var(--transition-speed);
+}
+
+.a-dark{
+    color: white;
+}
+
+.a-light{
+    color: black;
 }
 
 .a-dark:hover{
