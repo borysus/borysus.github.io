@@ -5,12 +5,15 @@
 
     --mid-color: #868686;
     --darker-mid-color: #6e6d6d;
+
+    --mid-color-light: #797979;
+    --darker-mid-color-dark: #919292;
 }
 
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255) 100%);
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -20,7 +23,7 @@ body {
 .dark {
     color: white;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(100,0,255) 100%);
 }
 
 .light{
@@ -39,8 +42,16 @@ a {
     transition: var(--transition-speed);
 }
 
-a:hover{
+.a-dark:hover{
     color: var(--mid-color);
+    transition: var(--transition-speed);
+    transition-delay: var(--transition-delay);
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+
+.a-light:hover{
+    color: var(--mid-color-light);
     transition: var(--transition-speed);
     transition-delay: var(--transition-delay);
     font-weight: 400;
@@ -152,9 +163,81 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+
 video{
     background: var(--mid-color);
     border-radius: 35px;
     padding: 5px;
 }
 
+.section-main {
+    font-size: 14px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 900px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.sidebar {
+    float: left;
+    width: 300px;
+    overflow-y: auto;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.sidebar-right {
+    float: right;
+    width: 300px;
+    overflow-y: auto;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 300px;
+}
+
+/* testing area */
+/* BEWARE THE DANGER */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgb(145, 145, 145) 50%, rgb(100, 0, 255) 100%); 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(0deg, rgb(100, 100, 100) 50%, rgb(91, 0, 228) 100%); 
+}
+
+/*
+.webkit-scrollbar-thumb-dark{
+    background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgb(100, 0, 255) 100%); 
+}
+
+.webkit-scrollbar-thumb-light{
+    background: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgb(100, 0, 255) 100%); 
+}
+
+
+.webkit-scrollbar-thumb-dark:hover{
+    background: linear-gradient(0deg, rgb(224, 224, 224) 50%, rgb(91, 0, 228) 100%);
+}
+
+.webkit-scrollbar-thumb-light:hover{
+    background: linear-gradient(0deg, rgb(31, 31, 31) 50%, rgb(91, 0, 228) 100%);
+}
+
+*/

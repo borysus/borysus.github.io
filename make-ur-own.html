@@ -9,157 +9,201 @@
         <script src="js/file1.js"></script>
     </head>
     <body onload="changeThemeOnStart()">
-        <nav class="navbar"> <!-- Pasek Nawigacyjny -->
+
+        <!-- BEWARE THE TESTING AREA -->
+
+        <aside class="sidebar">
+            <p><a href="index.html">Strona Główna</a></p>
+            <p><a href="posts.html">Lista polecanych klawiatur</a></p>
+            <p><a href="sound-tests.html">Testy dźwięku</a></p>
+            <p><a href="image-posts.html">Zdjęcia</a></p>
+            <p><a href="bio.html">O mnie</a></p>
+            <p>blah</p>
+            <p>blah</p>
+        </aside>
+
+        <aside class="sidebar-right">
             <div align="center">
-                <a href="index.html">Strona Główna</a> <a href="posts.html">Lista polecanych klawiatur</a>  <a href="sound-tests.html">Testy dźwięku</a>  <a href="image-posts.html">Zdjęcia</a>
+                <button class="changeThemeButton" onclick="changeTheme()">
+                    Zmień motyw
+                </button>
             </div>
-        </nav>
-        <hr>
-        <p class="site-title">FORMULARZE JESZCZE NIE DZIAŁAJĄ</p>
-        <hr>
-            <p class="site-title">Stwórz swoją własną klawiaturę!</p>
-            <div class="chechboxes" align="center">
-                <form action="plik.php">
-                    <p class="big-desc-type">Baza (kolor i rozmiar mają wpływ na cenę):</p>
-                    <p class="big-desc-type">60%:</p>
-                    <p class="onlyfont">
-                        MUCAI MKA610:
-                    </p>
-                        <p class="onlyfont">
-                            Czarny (80zł)
-                            <input id="MucaiMKA610Black" name="baza" type="radio" name="1" value="MucaiMKA610Black">
-                        </p>
-                        <p class="onlyfont">
-                            Biały (80zł)
-                            <input id="MucaiMKA610White" name="baza" type="radio" name="1" value="MucaiMKA610White">
-                        </p>
-                    <p class="onlyfont">
-                        MUCAI MKA61:
-                    </p>
-                        <p class="onlyfont">
-                            Czarny (80zł)
-                            <input id="MucaiMKA61Black" name="baza" type="radio" name="1" value="MucaiMKA61Black">
-                        </p>
-                        <p class="onlyfont">
-                            Biały (80zł)
-                            <input id="MucaiMKA61White" name="baza" type="radio" name="1" value="MucaiMKA61White">
-                        </p>
-                    <p class="big-desc-type">75% (TKL):</p>
-                    <p class="onlyfont">
-                        MUCAI MKA870:
-                    </p>
-                        <p class="onlyfont">
-                            Czarny (110zł)
-                            <input id="MucaiMKA870Black" name="baza" type="radio" name="1" value="MucaiMKA870Black">
-                        </p>
-                        <p class="onlyfont">
-                            Biały (110zł)
-                            <input id="MucaiMKA870Black" name="baza" type="radio" name="1" value="MucaiMKA870Black">
-                        </p>
+        </aside>
 
-                        <p class="onlyfont">
-                            AKKO 5075B Plus (bezprzewodowa, ma knob do głośności i pełne RGB):
-                        </p>
-                            <p class="onlyfont">
-                                Czarny (260zł)
-                                <input id="AKKO5075BplusBlack" name="baza" type="radio" name="1" value="AKKO5075BplusBlack">
+        <!-- END OF TESTING AREA -->
+        
+        <hr>
+            <p class="site-title">FORMULARZE JESZCZE NIE DZIAŁAJĄ</p>
+        <hr>
+
+        <section>
+            <section class="section-main">
+                    <p class="site-title">Stwórz swoją własną klawiaturę!</p>
+                    <div class="chechboxes" align="center">
+                        <form action="plik.php">
+                            <p class="big-desc-type">Baza (kolor i rozmiar mają wpływ na cenę):</p>
+                                <p class="onlyfont">
+                                    GMK (bezprzewodowa):
+                                </p>
+                                <p class="onlyfont">
+                                    61 (brak knoba, 170zł):
+                                </p>
+                                <p class="onlyfont">
+                                    Czarny
+                                    <input type="radio" name="1" name="baza" value="GMK61Black" id="GMK61Black">
+                                </p>
+                                <p class="onlyfont">
+                                    Biały
+                                    <input type="radio" name="1" name="baza" value="GMK61White" id="GMK61White">
+                                </p>
+        
+                                <p class="onlyfont">
+                                    67 (knob, 170zł):
+                                </p>
+                                <p class="onlyfont">
+                                    Czarny
+                                    <input type="radio" name="1" name="baza" value="GMK67Black" id="GMK67Black">
+                                </p>
+                                <p class="onlyfont">
+                                    Biały
+                                    <input type="radio" name="1" name="baza" value="GMK67White" id="GMK67White">
+                                </p>
+                                <p class="onlyfont">
+                                    Fioletowy
+                                    <input type="radio" name="1" name="baza" value="GMK67Purple" id="GMK67Purple">
+                                </p>
+        
+                                <p class="onlyfont">
+                                    AKKO 5075B Plus (bezprzewodowa, knob):
+                                </p>
+                                    <p class="onlyfont">
+                                        Czarny (260zł)
+                                        <input id="AKKO5075BplusBlack" name="baza" type="radio" name="1" value="AKKO5075BplusBlack">
+                                    </p>
+                                    <p class="onlyfont">
+                                        Biały (300zł)
+                                        <input id="AKKO5075BplusWhite" name="baza" type="radio" name="1" value="AKKO5075BplusWhite">
+                                    </p>
+                            
+                                <p class="onlyfont">MUCAI (tylko Holy Panda i Basic Red):</p>
+                                <p class="onlyfont">
+                                    MKA610 (80zł):
+                                </p>
+                                    <p class="onlyfont">
+                                        Czarny
+                                        <input id="MucaiMKA610Black" name="baza" type="radio" name="1" value="MucaiMKA610Black">
+                                    </p>
+                                    <p class="onlyfont">
+                                        Biały
+                                        <input id="MucaiMKA610White" name="baza" type="radio" name="1" value="MucaiMKA610White">
+                                    </p>
+                                <p class="onlyfont">
+                                    MKA61 (80zł):
+                                </p>
+                                    <p class="onlyfont">
+                                        Czarny
+                                        <input id="MucaiMKA61Black" name="baza" type="radio" name="1" value="MucaiMKA61Black">
+                                    </p>
+                                    <p class="onlyfont">
+                                        Biały
+                                        <input id="MucaiMKA61White" name="baza" type="radio" name="1" value="MucaiMKA61White">
+                                    </p>
+                                <p class="onlyfont">
+                                    MKA870 (110zł):
+                                </p>
+                                    <p class="onlyfont">
+                                    Czarny
+                                    <input id="MucaiMKA870Black" name="baza" type="radio" name="1" value="MucaiMKA870Black">
+                                </p>
+                                <p class="onlyfont">
+                                    Biały
+                                    <input id="MucaiMKA870Black" name="baza" type="radio" name="1" value="MucaiMKA870Black">
+                                </p>
+                
+                            <div id="keycapy">
+                                <p class="big-desc-type">Keycapy:</p>
+                                <p class="onlyfont">
+                                    Domyślne (brak dodatkowych kosztów, ale gorszy wygląd)
+                                    <input id="Basic" name="keycapy" type="radio" name="3" value="Basic">
+                                </p>
+                                <p class="onlyfont">
+                                    Inne (kontakt)
+                                    <input id="Other" name="keycapy" type="radio" name="3" value="Other">
+                                </p>
+                            </div>
+                            
+                            <p class="big-desc-type">            <hr>
+                                Przesmarowanie Switchy (dodatkowo płatne 30zł):
                             </p>
                             <p class="onlyfont">
-                                Biały (300zł)
-                                <input id="AKKO5075BplusWhite" name="baza" type="radio" name="1" value="AKKO5075BplusWhite">
+                                Tak
+                                <input id="yeah" name="smar" type="radio" name="4" value="yeah">
                             </p>
-                    
-                    <div id="keycapy">
-                        <p class="big-desc-type">Keycapy:</p>
-                        <p class="onlyfont">
-                            Domyślne (brak dodatkowych kosztów, ale gorszy wygląd)
-                            <input id="Basic" name="keycapy" type="radio" name="3" value="Basic">
-                        </p>
-                        <p class="onlyfont">
-                            Inne (kontakt)
-                            <input id="Other" name="keycapy" type="radio" name="3" value="Other">
-                        </p>
+                            <p class="onlyfont">
+                                Nie
+                                <input id="nah" name="smar" type="radio" name="4" value="nah">
+                            </p>
+        
+                            <p class="big-desc-type">Stabilizatory:</p>
+                            <p class="onlyfont">
+                                Podstawowe (zawsze smaruje)
+                                <input id="Basic" name="Stabilizatory" value="Basic" type="radio">
+                            </p>
+                            <p class="onlyfont">
+                                Everglide Panda V3
+                                <input id="EverglidePandaV3" name="Stabilizatory" value="EverglidePandaV3" type="radio">
+                            </p>
+                            <p class="onlyfont">
+                                Durock V2
+                                <input id="DurockV2" name="Stabilizatory" value="DurockV2" type="radio">
+                            </p>
+                            <p class="onlyfont">
+                                Durock V3
+                                <input id="DurockV3" name="Stabilizatory" value="DurockV3" type="radio">
+                            </p>
+                            <p class="onlyfont">
+                                MMD Princess V2
+                                <input id="MMDPV2" name="Stabilizatory" value="MMDPV2" type="radio">
+                            </p>
+        
+                            <p class="big-desc-type">Switche:</p>
+                            <p class="onlyfont">
+                                Holy Panda V2
+                                <input id="HolyPandaV2" name="switche" type="radio" value="HolyPandaV2">
+                            </p>
+                            <p class="desc-type">Outemu:</p>
+                            <p class="onlyfont">
+                                <a href="sound-tests.html#orbisttarget">Podstawowe Outemu Red (okropne są ale nic cię nie kosztują, jeśli decydujesz się na nie, bardzo polecam przesmarowanie)</a>
+                                <input id="BasicRed" name="switche" type="radio" value="BasicRed">
+                            </p>
+                            </p>
+                            <p class="onlyfont">
+                                Inne (Kontakt, jeśli ich nie robiłem, lub nie pasują do bazy, kupujesz na własną odpowiedzialność)
+                                <input id="Other" name="switche" type="radio" value="Other">
+                            </p>
+                            <p class="onlyfont">
+                                Numer Telefonu
+                                <input type="number" value="Telefon" id="kontakt" name="kontakt">
+                            </p>
+                            <p class="onlyfont">
+                                E-Mail
+                                <input type="email" id="kontakt" name="kontakt">
+                            </p>
+                            <p>
+                                <input type="submit" value="Wyślij">
+                            </p>
+                        </form>
                     </div>
-                    
-                    <p class="big-desc-type">
-                        Przesmarowanie Switchy (dodatkowo płatne 30zł):
-                    </p>
-                    <p class="onlyfont">
-                        Tak
-                        <input id="yeah" name="smar" type="radio" name="4" value="yeah">
-                    </p>
-                    <p class="onlyfont">
-                        Nie
-                        <input id="nah" name="smar" type="radio" name="4" value="nah">
-                    </p>
-
-                    <p class="big-desc-type">Stabilizatory:</p>
-                    <p class="onlyfont">
-                        Podstawowe (zawsze smaruje)
-                        <input id="Basic" name="Stabilizatory" value="Basic" type="radio">
-                    </p>
-                    <p class="onlyfont">
-                        Everglide Panda V3
-                        <input id="EverglidePandaV3" name="Stabilizatory" value="EverglidePandaV3" type="radio">
-                    </p>
-                    <p class="onlyfont">
-                        Durock V2
-                        <input id="DurockV2" name="Stabilizatory" value="DurockV2" type="radio">
-                    </p>
-                    <p class="onlyfont">
-                        Durock V3
-                        <input id="DurockV3" name="Stabilizatory" value="DurockV3" type="radio">
-                    </p>
-                    <p class="onlyfont">
-                        MMD Princess V2
-                        <input id="MMDPV2" name="Stabilizatory" value="MMDPV2" type="radio">
-                    </p>
-
-                    <p class="big-desc-type">Switche:</p>
-                    <p class="onlyfont">
-                        Holy Panda V2
-                        <input id="HolyPandaV2" name="switche" type="radio" value="HolyPandaV2">
-                    </p>
-                    <p class="desc-type">Outemu:</p>
-                    <p class="onlyfont">
-                        <a href="sound-tests.html#orbisttarget">Podstawowe Outemu Red (okropne są ale nic cię nie kosztują, jeśli decydujesz się na nie, bardzo polecam przesmarowanie)</a>
-                        <input id="BasicRed" name="switche" type="radio" value="BasicRed">
-                    </p>
-                    <p class="onlyfont">
-                        <a href="sound-tests.html#obsttarget">Blue</a>
-                        <input id="OutemuBlue" name="switche" type="radio" value="OutemuBlue">
-                    </p>
-                    <p class="onlyfont">
-                        Inne (Kontakt, jeśli ich nie robiłem, lub nie pasują do bazy, kupujesz na własną odpowiedzialność)
-                        <input id="Other" name="switche" type="radio" value="Other">
-                    </p>
-                    <p class="onlyfont">
-                        Numer Telefonu
-                        <input type="number" value="Telefon" id="kontakt" name="kontakt">
-                    </p>
-                    <p class="onlyfont">
-                        E-Mail
-                        <input type="email" id="kontakt" name="kontakt">
-                    </p>
-                    <p>
-                        <input type="submit" value="Wyślij">
-                    </p>
-                </form>
-            </div>
-        <hr>
-        <div align="center">
-            <button class="changeThemeButton" onclick="changeTheme()">
-                Zmień motyw
-            </button>
-        </div>
-        <hr>
-        <footer class="footer">
-            <h2>Kontakt</h2>
-            <div>
-                <p>Zamówienia zgłaszać tutaj.</p>
-                <p>Numer (+48 Polska): nie podam na razie</p>
-                <p>Mail: nie podam na razie</p>
-            </div>
-        </footer>
+            </section>
+            <hr>
+            <footer class="footer">
+                <h2>Kontakt</h2>
+                <div>
+                    <p>Zamówienia zgłaszać tutaj.</p>
+                    <p>Numer (+48 Polska): nie podam na razie</p>
+                    <p>Mail: nie podam na razie</p>
+                </div>
+            </footer>
+        </section>
     </body>
 </html>
