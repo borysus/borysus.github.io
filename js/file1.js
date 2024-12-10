@@ -7,11 +7,9 @@ function changeTheme(){
 
     // scrollbarThumb = document.querySelector(':webkit-scrollbar-thumb');
 
-    alink = querySelector('a');
-
     if ( document.body.classList.contains('dark') ){
         document.body.classList.toggle('light');
-        document.alink.classList.toggle('a-light');
+        document.querySelector('a').classList.toggle('a-light');
         // document.scrollbarThumb.classList.toggle('webkit-scrollbar-thumb-light')
         // i gave up on root.style.setProperty('--mid-color', '#797979'); //LIGHT MID COLOR
         // root.style.setProperty('--darker-mid-color', '#919292'); //LIGHT DARKER MID COLOR
@@ -19,7 +17,7 @@ function changeTheme(){
     else if (document.body.classList.contains('light'))
     {
         document.body.classList.toggle('dark');
-        document.alink.classList.toggle('a-dark');
+        document.querySelector('a').classList.toggle('a-dark');
         // document.scrollbarThumb.classList.toggle('webkit-scrollbar-thumb-dark')
         // root.style.setProperty('--mid-color', '#868686'); //DARK MID COLOR
         // root.style.setProperty('--darker-mid-color', '6e6d6d'); //DARK DARKER MID COLOR
