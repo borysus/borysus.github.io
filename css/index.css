@@ -42,24 +42,8 @@ a {
     transition: var(--transition-speed);
 }
 
-.adark{
-    color: white;
-}
-
-.alight{
-    color: black;
-}
-
-.adark:hover{
+a:hover{
     color: var(--mid-color);
-    transition: var(--transition-speed);
-    transition-delay: var(--transition-delay);
-    font-weight: 400;
-    transition: 0.5s ease-out;
-}
-
-.alight:hover{
-    color: var(--mid-color-light);
     transition: var(--transition-speed);
     transition-delay: var(--transition-delay);
     font-weight: 400;
