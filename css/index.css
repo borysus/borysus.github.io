@@ -8,11 +8,15 @@
 
     --mid-color-light: #797979;
     --darker-mid-color-dark: #919292;
+
+    --dark-text-color: white;
+    --light-text-color: black;
 }
 
 a {
     text-align: center;
     transition: var(--transition-speed);
+    color: initial;
 }
 
 a:hover{
@@ -24,7 +28,7 @@ a:hover{
 }
 
 .alight {
-    color: black;
+    color: var(--light-text-color);
 }
 
 .alight:hover{
@@ -36,7 +40,7 @@ a:hover{
 }
 
 .adark {
-    color: white;
+    color: var(--dark-text-color);
 }
 
 .adark:hover{
@@ -94,7 +98,6 @@ footer{
 .site-title{
     text-align: center;
     font-size: 25px;
-    color: var(--main-text-color);
 }
 
 .desc-type{
@@ -136,10 +139,6 @@ footer{
 
 .btw{
     font-size: 8px;
-}
-
-.navbar{
-    color: var(--main-text-color);
 }
 
 #nazwaklawy{
