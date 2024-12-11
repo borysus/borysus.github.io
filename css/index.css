@@ -16,7 +16,7 @@
 a {
     text-align: center;
     transition: var(--transition-speed);
-    color: initial;
+    color: white;
 }
 
 a:hover{
@@ -116,7 +116,7 @@ footer{
     font-size: 15px;
 }
 
-.zdjecie{
+.zdjeciedark{
     background: var(--mid-color);
     border-radius: 35px;
     width: 20%;
@@ -126,6 +126,10 @@ footer{
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.zdjecielight{
+    background: var(--mid-color-light);
 }
 
 .pfp{
@@ -155,6 +159,14 @@ footer{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.postlight{
+    background: var(--mid-color-light);
+}
+
+.postdark{
+    background: var(--mid-color);
 }
 
 .post-title{
