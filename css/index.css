@@ -10,6 +10,43 @@
     --darker-mid-color-dark: #919292;
 }
 
+a {
+    text-align: center;
+    transition: var(--transition-speed);
+}
+
+a:hover{
+    color: var(--mid-color);
+    transition: var(--transition-speed);
+    transition-delay: var(--transition-delay);
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+
+.alight {
+    color: black;
+}
+
+.alight:hover{
+    color: var(--mid-color-light);
+    transition: var(--transition-speed);
+    transition-delay: var(--transition-delay);
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+
+.adark {
+    color: white;
+}
+
+.adark:hover{
+    color: var(--mid-color);
+    transition: var(--transition-speed);
+    transition-delay: var(--transition-delay);
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+
 body{
     font-family: "Lucida Console", "Courier New", monospace;
     background: rgb(0,0,0);
@@ -34,20 +71,6 @@ body{
 
 footer{
     text-align: center;
-}
-
-a {
-    color: white;
-    text-align: center;
-    transition: var(--transition-speed);
-}
-
-a:hover{
-    color: var(--mid-color);
-    transition: var(--transition-speed);
-    transition-delay: var(--transition-delay);
-    font-weight: 400;
-    transition: 0.5s ease-out;
 }
 
 .guzik{
