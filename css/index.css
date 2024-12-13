@@ -1,4 +1,4 @@
-:root{
+:root {
     --my-font: "Lucida Console", "Courier New", monospace;
     --transition-speed: 0.5s;
     --transition-delay: 0s;
@@ -13,14 +13,14 @@
     --light-text-color: black;
 }
 
-a {
+a { /* dark */
     text-align: center;
     transition: var(--transition-speed);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-a:hover{
-    color: var(--mid-color);
+a:hover {
+    color: #868686;
     transition: var(--transition-speed);
     transition-delay: var(--transition-delay);
     font-weight: 400;
@@ -28,28 +28,13 @@ a:hover{
 }
 
 .alight {
-    color: var(--light-text-color);
+    color: black;
 }
 
-.alight:hover{
-    color: var(--mid-color-light);
-    transition: var(--transition-speed);
-    transition-delay: var(--transition-delay);
-    font-weight: 400;
-    transition: 0.5s ease-out;
+.alight:hover {
+    color: #797979;
 }
 
-.adark {
-    color: var(--dark-text-color);
-}
-
-.adark:hover{
-    color: var(--mid-color);
-    transition: var(--transition-speed);
-    transition-delay: var(--transition-delay);
-    font-weight: 400;
-    transition: 0.5s ease-out;
-}
 
 body{
     font-family: "Lucida Console", "Courier New", monospace;
@@ -130,6 +115,10 @@ footer{
 
 .zdjecielight{
     background: var(--mid-color-light);
+}
+
+.link{
+
 }
 
 .pfp{
