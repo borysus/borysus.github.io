@@ -10,17 +10,12 @@ function changeTheme() {
     
     if (document.body.classList.contains('dark')) {
         document.body.classList.toggle('light');
-        links.forEach(link => {
-            link.classList.remove('adark');
-            link.classList.add('alight');
-        });
+        links.classList.toggle('alight');
     } 
     else if (document.body.classList.contains('light')) {
         document.body.classList.toggle('dark');
-        links.forEach(link => {
-            link.classList.remove('alight');
-            link.classList.add('adark');
-        });
+        
+        links.classList.toggle('adark');
     }
 }
 

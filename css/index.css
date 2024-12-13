@@ -198,8 +198,7 @@ video{
 
 .section-main {
     font-size: 14px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-right: 10px;
     height: 900px;
     flex-grow: 1;
     overflow-y: auto;
@@ -207,20 +206,11 @@ video{
 
 .sidebar {
     float: left;
-    width: 300px;
+    width: 20vw;
     overflow-y: auto;
     flex-shrink: 0;
     text-align: center;
-    padding-top: 300px;
-}
-
-.sidebar-right {
-    float: right;
-    width: 300px;
-    overflow-y: auto;
-    flex-shrink: 0;
-    text-align: center;
-    padding-top: 300px;
+    padding-top: 150px;
 }
 
 /* testing area */
