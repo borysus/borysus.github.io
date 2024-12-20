@@ -208,6 +208,7 @@ video{
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
+    background-color: rgba(0, 0, 0, 0);
 }
   
 /* Track */
