@@ -14,7 +14,7 @@ include_once('database.php');
 <body>
     <?php
     printNavbar();
-    ?>
+    ?>  
     <main class="container mt-5">
         <h2>Posty</h2>
         <?php

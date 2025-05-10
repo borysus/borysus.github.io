@@ -14,7 +14,8 @@ function printNavbar() {
             <li class="nav-item">
             <li class="nav-item"><a class="nav-link" aria-current="page" href="index.php">Strona Główna</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="posts.php">Posty</a></li>
-            <li class="nav-item"><a class="nav-item" href="admin-posts.php">Zarządzanie - Posty</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin-posts.php">Zarządzanie - Posty</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="contact.php">Kontakt</a></li>
         </ul>
         </div>
     </div>
@@ -43,12 +44,12 @@ function printTextArea($name, $displayName){
 function printSelect($name, $displayName, $array) {
     ?>
     <div class="form-group">
-        <label for="<?=$name?>"><?=$displayName?></label>
-        <select class="form-control" name="<?=$name?>" id="<?$name?>">
+        <label for="<?=$name?>" class="form-label"><?=$displayName?></label>
+        <select class="form-control" name="<?=$name?>" id="<?=$name?>">
             <?php
             foreach($array as $option) {
                 ?>
-                <option value="<?=$option['id']?>"><?=$option['name']?></option>
+                <option value="<?=$option['ID']?>"><?=$option['name']?></option>
                 <?php
             }
             ?>
@@ -57,7 +58,7 @@ function printSelect($name, $displayName, $array) {
     <?php
 }
 
-function isPostValud($values) {
+function isPostValid($values) {
     foreach($values as $value) {
         if(!isset($_POST[$value])) return false;
     }
