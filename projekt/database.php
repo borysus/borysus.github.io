@@ -69,3 +69,18 @@ function addMessage(){
     $connection->close();
     header('Location: contact.php?success=1');
 }
+
+function login() {
+    $values = ['email', 'password'];
+    if (!isPostValid($values)) return;
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $connection = getConnection();
+    $sql = "SELECT * FROM admins WHERE email='$email'";
+    $result = $connection->query($sql);
+    $rows = $result->fetch_all(MYSQLI_ASSOC);
+    $connection->close();
+    if (count($rows) == 0) return;
+    if (!password_verify($password, $rows[0]['password'])) return;
+    $_SESSION['adminId'] = $rows[0]['ID'];
+}

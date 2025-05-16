@@ -1,6 +1,7 @@
 <?php
 include_once('functions.php');
 include_once('database.php');
+login();
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -16,10 +17,13 @@ include_once('database.php');
     printNavbar();
     ?>
     <main class="container mt-5">
-        <h2>Strona Główna</h2>
-        <h4>
-            Liczba postow: WIP
-        </h4>
+        <h2>Logowanie</h2>
+        <form method="post">
+            <?=printFormField('email', 'E-mail', 'email')?>
+            <?=printFormField('password', 'Hasło', 'password')?>
+            
+            <input class="btn btn-primary" type="submit" value="Zaloguj">
+        </form>
     </main>
     <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>

@@ -1,5 +1,6 @@
 <?php
-include_once('functions.php');
+include('functions.php');
+checkIfAdmin();
 include_once('database.php');
 $categories = getAllCategories();
 addPost();
